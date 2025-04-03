@@ -19,5 +19,6 @@ public class Main {
         EmergenciaController.initRoutes();
         InflacionController.initRoutes();
         ArticuloController.initRoutes();
+        TorneoController.initRoutes();
     }
 }
