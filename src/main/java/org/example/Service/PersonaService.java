@@ -1,14 +1,14 @@
-package org.example.Data;
+package org.example.Service;
 
 import org.example.Model.Persona;
 
 import java.util.List;
 import java.util.ArrayList;
 
-public class PersonaDAO {
+public class PersonaService {
     private List<Persona> personas;
 
-    public PersonaDAO() {
+    public PersonaService() {
         this.personas = new ArrayList<>();
         cargarDatos();
     }
