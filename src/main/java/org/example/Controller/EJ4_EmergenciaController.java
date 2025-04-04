@@ -3,14 +3,14 @@ package org.example.Controller;
 import static spark.Spark.*;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.Service.EmergenciaService;
+import org.example.Service.EJ4_EmergenciaService;
 
 import java.util.Map;
 
-public class EmergenciaController {
+public class EJ4_EmergenciaController {
 
     public static void initRoutes(){
-        EmergenciaService servicio = new EmergenciaService();
+        EJ4_EmergenciaService servicio = new EJ4_EmergenciaService();
 
         get("/emergencia", (req, res) -> {
             String tipo = req.queryParams("tipo");

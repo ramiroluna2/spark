@@ -1,11 +1,11 @@
 package org.example.Model;
 
-public class Libro {
+public class EJ7_Libro {
 
     public String nombre;
     public String autor;
 
-    public Libro (String nombre, String autor) {
+    public EJ7_Libro(String nombre, String autor) {
         this.nombre = nombre;
         this.autor = autor;
     }

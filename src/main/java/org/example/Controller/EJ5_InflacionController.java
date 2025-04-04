@@ -2,15 +2,15 @@ package org.example.Controller;
 
 import static spark.Spark.*;
 
-import org.example.Service.InflacionService;
+import org.example.Service.EJ5_InflacionService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.Map;
 import java.util.HashMap;
 
-public class InflacionController {
+public class EJ5_InflacionController {
     public static void initRoutes() {
-        InflacionService servicio = new InflacionService();
+        EJ5_InflacionService servicio = new EJ5_InflacionService();
         ObjectMapper mapper = new ObjectMapper();
 
         get("/inflacion", (req, res) -> {

@@ -1,6 +1,6 @@
 package org.example.Service;
 
-public class InflacionService {
+public class EJ5_InflacionService {
     private static final double TASA_MENSUAL = 0.06;
 
     public double calcularInflacion(double cantidad, int meses) {

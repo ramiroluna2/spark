@@ -2,14 +2,14 @@ package org.example.Controller;
 
 import static spark.Spark.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.Service.LibroService;
+import org.example.Service.EJ7_LibroService;
 
 import java.util.List;
 import java.util.Map;
 
-public class LibroController {
+public class EJ7_LibroController {
     public static void initRoutes() {
-        LibroService servicio = new LibroService();
+        EJ7_LibroService servicio = new EJ7_LibroService();
         ObjectMapper mapper = new ObjectMapper();
 
         get("/libros", (req, res) -> {

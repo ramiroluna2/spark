@@ -13,12 +13,16 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         port(4567);
 
-        PalindromoController.initRoutes();
-        CirculoController.initRoutes();
-        PersonaController.initRoutes();
-        EmergenciaController.initRoutes();
-        InflacionController.initRoutes();
-        ArticuloController.initRoutes();
-        TorneoController.initRoutes();
+        EJ1_PalindromoController.initRoutes();
+        EJ2_CirculoController.initRoutes();
+        EJ3_PersonaController.initRoutes();
+        EJ4_EmergenciaController.initRoutes();
+        EJ5_InflacionController.initRoutes();
+        EJ6_ArticuloController.initRoutes();
+        EJ7_LibroController.initRoutes();
+        EJ8_TorneoController.initRoutes();
     }
 }
+
+
+

@@ -2,7 +2,7 @@ package org.example.Controller;
 
 import static spark.Spark.*;
 
-public class CirculoController {
+public class EJ2_CirculoController {
 
     public static void initRoutes() {
         get("/circulo",(req, res) -> {

@@ -3,13 +3,13 @@ package org.example.Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Persona {
+public class EJ3_Persona {
     private String nombre;
     private String apellido;
-    private List<Persona> hijos;
+    private List<EJ3_Persona> hijos;
 
 
-    public Persona(String nombre, String apellido) {
+    public EJ3_Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.hijos = new ArrayList<>();
@@ -21,10 +21,10 @@ public class Persona {
     public String getApellido() {
         return apellido;
     }
-    public List<Persona> getHijos() {
+    public List<EJ3_Persona> getHijos() {
         return hijos;
     }
-    public void agregarHijo(Persona hijo) {
+    public void agregarHijo(EJ3_Persona hijo) {
         this.hijos.add(hijo);
     }
 

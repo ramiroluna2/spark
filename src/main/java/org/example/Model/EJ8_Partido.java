@@ -2,14 +2,14 @@ package org.example.Model;
 
 
 
-public class Partido {
+public class EJ8_Partido {
     private String local;
     private String visitante;
     private Integer goleslocal;
     private Integer golesvisitante;
     private boolean jugado;
 
-    public Partido(String local, String visitante, Integer goleslocal, Integer golesvisitante, boolean jugado) {
+    public EJ8_Partido(String local, String visitante, Integer goleslocal, Integer golesvisitante, boolean jugado) {
         this.local = local;
         this.visitante = visitante;
         this.goleslocal = goleslocal;

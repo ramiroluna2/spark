@@ -3,11 +3,11 @@ package org.example.Service;
 import java.util.HashMap;
 import java.util.Map;
 
-public class EmergenciaService {
+public class EJ4_EmergenciaService {
 
     private final Map<String, String> telefonos;
 
-    public EmergenciaService() {
+    public EJ4_EmergenciaService() {
         this.telefonos = new HashMap<>();
         cargarTelefonos();
     }

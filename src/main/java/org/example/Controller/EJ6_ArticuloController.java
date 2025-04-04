@@ -3,15 +3,15 @@ package org.example.Controller;
 import static spark.Spark.*;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.Model.Articulo;
-import org.example.Service.ArticuloService;
+import org.example.Model.EJ6_Articulo;
+import org.example.Service.EJ6_ArticuloService;
 
 import java.util.Map;
 
 
-public class ArticuloController {
+public class EJ6_ArticuloController {
     public static void initRoutes() {
-        ArticuloService servicio = new ArticuloService();
+        EJ6_ArticuloService servicio = new EJ6_ArticuloService();
         ObjectMapper mapper = new ObjectMapper();
 
         get("/articulo", (req, res) -> {
@@ -24,20 +24,20 @@ public class ArticuloController {
 
             }
 
-            Articulo articulo = servicio.getArticulo(codigo);
+            EJ6_Articulo EJ6Articulo = servicio.getArticulo(codigo);
 
-            if (articulo == null) {
+            if (EJ6Articulo == null) {
                 res.status(404);
                 return mapper.writeValueAsString(Map.of("error", "Artículo no encontrado"));
             }
 
-            double iva = articulo.getPrecioNeto() * 0.21;
-            double total = articulo.getPrecioNeto() + iva;
+            double iva = EJ6Articulo.getPrecioNeto() * 0.21;
+            double total = EJ6Articulo.getPrecioNeto() + iva;
 
             Map<String, Object> respuesta = Map.of(
-                    "codigo", articulo.getCodigo(),
-                    "descripcion", articulo.getDescripcion(),
-                    "precioNeto", articulo.getPrecioNeto(),
+                    "codigo", EJ6Articulo.getCodigo(),
+                    "descripcion", EJ6Articulo.getDescripcion(),
+                    "precioNeto", EJ6Articulo.getPrecioNeto(),
                     "iva", Math.round(iva * 100.0) / 100.0,
                     "total", Math.round(total * 100.0) / 100.0
             );

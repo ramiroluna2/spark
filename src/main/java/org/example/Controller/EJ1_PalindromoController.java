@@ -2,7 +2,7 @@ package org.example.Controller;
 
 import static spark.Spark.*;
 
-public class PalindromoController {
+public class EJ1_PalindromoController {
 
     public static void initRoutes() {
         get("/palindromo", (req, res) -> {
